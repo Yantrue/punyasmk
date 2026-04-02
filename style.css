@@ -18,7 +18,7 @@ body{
     z-index:-1;
 }
 
-/* WRAPPER CENTER FIX */
+/* WRAPPER */
 .wrapper{
     position:absolute;
     top:48%;
@@ -60,7 +60,6 @@ body{
     margin-bottom:20px;
 }
 
-/* TEXT GLOW */
 .banner .text{
     position:relative;
     z-index:2;
@@ -100,20 +99,23 @@ body{
     font-size:13px;
 }
 
-/* INPUT */
+/* INPUT DIPENDEKIN */
 input{
-    width:100%;
-    padding:12px;
+    width:80%;
+    padding:11px;
     margin-bottom:12px;
     border:none;
     border-radius:50px;
     background:rgba(255,255,255,0.95);
     font-size:13px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
-/* BUTTON */
+/* BUTTON IKUT */
 button{
-    width:100%;
+    width:80%;
     padding:12px;
     border:none;
     border-radius:50px;
@@ -122,6 +124,8 @@ button{
     background:linear-gradient(90deg,#2b6cff,#7b4dff);
     cursor:pointer;
     transition:0.15s;
+    display:block;
+    margin:auto;
 }
 
 /* FOOTER */
