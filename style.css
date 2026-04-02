@@ -1,0 +1,121 @@
+body{
+    margin:0;
+    font-family:'Inter', sans-serif;
+    background:url('https://png.pngtree.com/background/20250104/original/pngtree-ramadan-kareem-background-with-night-landscape-and-mosque-silhouette-picture-image_15326163.jpg') no-repeat center;
+    background-size:cover;
+    height:100vh;
+    color:#fff;
+}
+
+/* overlay */
+.overlay{
+    position:fixed;
+    inset:0;
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85));
+}
+
+/* wrapper */
+.wrapper{
+    position:relative;
+    z-index:1;
+    text-align:center;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+/* logo */
+.logo{
+    width:70px;
+    margin-bottom:10px;
+}
+
+/* title */
+.title-small{
+    font-size:14px;
+    opacity:0.8;
+}
+
+.title-big{
+    font-size:28px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+/* banner */
+.banner{
+    position:relative;
+    display:inline-block;
+    padding:8px 30px;
+    border-radius:30px;
+    background:rgba(0,0,0,0.4);
+    border:1px solid rgba(255,215,0,0.4);
+    overflow:hidden;
+    margin-bottom:25px;
+}
+
+/* text glow */
+.banner .text{
+    position:relative;
+    z-index:2;
+    text-shadow:0 0 10px rgba(255,215,0,0.7);
+}
+
+/* shine effect */
+.shine{
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:60%;
+    height:100%;
+    background:linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+    transform:skewX(-25deg);
+}
+
+/* card */
+.card{
+    width:320px;
+    margin:auto;
+    padding:25px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.2);
+}
+
+/* text */
+.desc{
+    margin-bottom:15px;
+}
+
+/* input */
+input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:30px;
+}
+
+/* button */
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:30px;
+    color:#fff;
+    font-weight:600;
+    background:linear-gradient(90deg,#0d6efd,#6f42c1);
+    cursor:pointer;
+    transition:0.2s;
+}
+
+/* footer */
+.footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    text-align:center;
+    padding:10px;
+    font-size:13px;
+    background:rgba(0,0,0,0.6);
+}
