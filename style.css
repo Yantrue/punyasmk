@@ -1,121 +1,133 @@
 body{
     margin:0;
     font-family:'Inter', sans-serif;
-    background:url('https://png.pngtree.com/background/20250104/original/pngtree-ramadan-kareem-background-with-night-landscape-and-mosque-silhouette-picture-image_15326163.jpg') no-repeat center;
-    background-size:cover;
     height:100vh;
     color:#fff;
+    overflow:hidden;
 }
 
-/* overlay */
-.overlay{
+/* BACKGROUND */
+.bg{
     position:fixed;
     inset:0;
-    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85));
+    background:
+    linear-gradient(rgba(3,15,18,0.75), rgba(3,15,18,0.95)),
+    url('https://png.pngtree.com/background/20250104/original/pngtree-ramadan-kareem-background-with-night-landscape-and-mosque-silhouette-picture-image_15326163.jpg');
+    background-size:cover;
+    background-position:center;
+    z-index:-1;
 }
 
-/* wrapper */
+/* WRAPPER */
 .wrapper{
     position:relative;
-    z-index:1;
     text-align:center;
     top:50%;
     transform:translateY(-50%);
 }
 
-/* logo */
+/* LOGO */
 .logo{
-    width:70px;
-    margin-bottom:10px;
+    width:75px;
+    margin-bottom:8px;
+    border-radius:50%;
+    box-shadow:0 6px 20px rgba(0,0,0,0.6);
 }
 
-/* title */
+/* TITLE */
 .title-small{
     font-size:14px;
-    opacity:0.8;
+    color:#ffffffcc;
 }
 
 .title-big{
-    font-size:28px;
+    font-size:30px;
     font-weight:700;
-    margin-bottom:15px;
+    margin-bottom:12px;
 }
 
-/* banner */
+/* BANNER */
 .banner{
     position:relative;
     display:inline-block;
-    padding:8px 30px;
-    border-radius:30px;
-    background:rgba(0,0,0,0.4);
-    border:1px solid rgba(255,215,0,0.4);
+    padding:8px 35px;
+    border-radius:50px;
+    background:linear-gradient(135deg, rgba(15,40,35,0.9), rgba(10,25,22,0.9));
+    border:1px solid rgba(212,175,55,0.5);
+    box-shadow:0 10px 30px rgba(0,0,0,0.6);
     overflow:hidden;
     margin-bottom:25px;
 }
 
-/* text glow */
+/* TEXT GLOW */
 .banner .text{
     position:relative;
     z-index:2;
-    text-shadow:0 0 10px rgba(255,215,0,0.7);
+    text-shadow:
+        0 0 8px rgba(255,215,0,0.7),
+        0 0 20px rgba(255,215,0,0.4);
 }
 
-/* shine effect */
+/* SHIMMER */
 .shine{
     position:absolute;
     top:0;
     left:-100%;
     width:60%;
     height:100%;
-    background:linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+    background:linear-gradient(120deg, transparent, rgba(255,215,0,0.3), transparent);
     transform:skewX(-25deg);
 }
 
-/* card */
+/* CARD */
 .card{
-    width:320px;
+    width:340px;
     margin:auto;
-    padding:25px;
-    border-radius:20px;
-    background:rgba(255,255,255,0.08);
-    backdrop-filter:blur(15px);
+    padding:28px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.07);
+    backdrop-filter:blur(18px);
     border:1px solid rgba(255,255,255,0.2);
+    box-shadow:0 20px 60px rgba(0,0,0,0.7);
 }
 
-/* text */
+/* TEXT */
 .desc{
-    margin-bottom:15px;
+    margin-bottom:18px;
+    font-size:14px;
 }
 
-/* input */
+/* INPUT */
 input{
     width:100%;
-    padding:12px;
+    padding:14px;
     margin-bottom:15px;
     border:none;
-    border-radius:30px;
+    border-radius:50px;
+    background:rgba(255,255,255,0.95);
 }
 
-/* button */
+/* BUTTON */
 button{
     width:100%;
-    padding:12px;
+    padding:14px;
     border:none;
-    border-radius:30px;
+    border-radius:50px;
     color:#fff;
     font-weight:600;
-    background:linear-gradient(90deg,#0d6efd,#6f42c1);
+    background:linear-gradient(90deg,#2b6cff,#7b4dff);
     cursor:pointer;
-    transition:0.2s;
+    transition:0.15s;
 }
 
-/* footer */
+/* FOOTER */
 .footer{
     position:fixed;
     bottom:0;
     width:100%;
     text-align:center;
-    padding:10px;
+    padding:14px;
     font-size:13px;
-    background:rgba(0,0,0,0.6);
+    color:#ffffffcc;
+    background:linear-gradient(180deg,#0f2027,#0a1922);
 }
